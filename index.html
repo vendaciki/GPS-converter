@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GPS Převodník</title>
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section>
+            <div id="input">
+                <h1>GPS Převodník</h1>
+                <label for="inputCoordinates">Zadejte GPS souřadnice (DD° MM.mmm):</label>
+                <textarea id="inputCoordinates" placeholder="N 49° 13.116 E 016° 36.189 
+N 49° 19.424 E 016° 17.455"></textarea>
+            </div>
+        
+            <button onclick="convertCoordinates()">Převést</button>
+
+            <div id="output">
+                <label>Výsledné souřadnice (DD.ddddddd):</label>
+                <textarea id="outputCoordinates" readonly></textarea>
+            </div>
+
+            <button onclick="resetCoordinates()">Resetovat</button>
+
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

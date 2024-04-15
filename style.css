@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1, label, textarea, #input, #output {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    
+    section {
+        width: 100%;
+    }
+
+}
